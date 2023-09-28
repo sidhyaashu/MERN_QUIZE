@@ -1,0 +1,19 @@
+.questions{
+    h3{
+        margin-bottom: 1rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        list-style: none;
+        li{
+            display: flex;
+            gap: .5rem;
+            input{
+                cursor: pointer;
+            }
+        }
+    }
+}
