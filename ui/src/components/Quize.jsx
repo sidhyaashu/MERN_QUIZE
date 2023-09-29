@@ -1,8 +1,14 @@
+import { useEffect } from 'react'
 import '../styles/Quize.scss'
 import Questions from './Questions'
-
+import { useSelector } from "react-redux"
 
 const Quize = () => {
+  const {questions} = useSelector(state=>state)
+
+  useEffect(()=>{
+    console.log(questions)
+  })
 
   const onNext = ()=>{
     console.log('next')

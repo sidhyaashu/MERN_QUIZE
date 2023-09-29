@@ -1,0 +1,31 @@
+div{
+    width: 100%;
+
+    table {
+            width: 100%;
+    
+            thead {
+                color: white;
+                font-size: 1.1em;
+                text-align: center;
+                background-color: #212121;
+                padding: 1rem 0;
+            }
+    
+            tbody {
+                color: white;
+                font-size: 1.1em;
+                text-align: center;
+                background-color: #212121;
+                padding: 1.2rem .3rem;
+            }
+    
+            thead>tr>td {
+                border: 1px solid green;
+                
+            }
+            tbody>tr>td {
+                font-size: 1.1em;
+            }
+        }
+}

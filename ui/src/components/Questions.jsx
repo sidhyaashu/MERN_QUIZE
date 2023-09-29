@@ -15,6 +15,8 @@ const Questions = () => {
   useEffect(()=>{
     console.log(question)
   })
+
+  
   return (
     <div className="questions">
       <h3>{question.id+"." +" "+question.question}</h3>
