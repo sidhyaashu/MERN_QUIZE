@@ -10,7 +10,7 @@ export default [
     },
     {
         id:2,
-        question:"My name is _____ sidhya",
+        question:"My fater name is _____ sidhya",
         options:[
             "Raman",
             "shyam",
@@ -19,20 +19,20 @@ export default [
     },
     {
         id:3,
-        question:"My name is _____ sidhya",
+        question:"My house is _____ sidhya",
         options:[
-            "Raman",
-            "shyam",
-            "Asutosh"
+            "hilala",
+            "rama_swami",
+            "mutthu Swami"
         ]
     },
     {
         id:4,
-        question:"My name is _____ sidhya",
+        question:"Where i do live _____ sidhya",
         options:[
-            "Raman",
-            "shyam",
-            "Asutosh"
+            "niyamat",
+            "station",
+            "Pakistan"
         ]
     },
     {

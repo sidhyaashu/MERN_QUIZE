@@ -1,21 +1,28 @@
 import { useEffect } from 'react'
 import '../styles/Quize.scss'
 import Questions from './Questions'
-import { useSelector } from "react-redux"
+import { useSelector ,useDispatch} from "react-redux"
+import shift from '../hooks/shiftingQuestion'
 
 const Quize = () => {
-  const {questions} = useSelector(state=>state)
+  const {queue,trace} = useSelector(state=>state.questions)
+  const dispatch = useDispatch()
+
 
   useEffect(()=>{
-    console.log(questions)
+    console.log(queue.length)
   })
 
   const onNext = ()=>{
-    console.log('next')
+    if(trace< queue.length-1){
+      dispatch(shift.moveNextQuestion())
+    }
   }
 
   const onPrev = ()=>{
-    console.log('prev')
+    if(trace>0){
+      dispatch(shift.movePrevQuestion())
+    }
   }
 
   return (
